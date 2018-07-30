@@ -2,10 +2,44 @@
 
 require_once "config.php";
 
-$usuario = new Usuario;
 
-$usuario->listaUsuarioPorId(2);
+//LISTAR USUARIO POR ID
+//$usuario = new Usuario;
+//$usuario->listaUsuarioPorId(2);
+//echo $usuario;
+//echo "<br>++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>";
 
+//Listar todos usuarios
+//$lista = $usuario->listarUsuarios();
+//echo json_encode($lista);
+//echo "<br>++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>";
+
+//BUSCAR USUARIO POR LOGIN
+//$buscaPorlogin = $usuario->buscaUsuarioPorlogin("a");
+//echo json_encode($buscaPorlogin);
+//echo "<br>++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>";
+
+// CONFRIMAR LOGIN 
+//$confirmarLogin  = $usuario->confirmarLogin("andre","1023");
+//echo $confirmarLogin;
+
+//CRIANDO INSERT DAO
+//$aluno  = new Usuario("andre123", "caca");
+//$aluno->insert();
+// echo $aluno;
+
+
+//ataulizando usuario
+/*
+$usuario = new Usuario();
+$usuario->listaUsuarioPorId(9);
+$usuario->update("jj", "jj");
+echo $usuario;*/
+
+
+$usuario = new Usuario();
+$usuario->listaUsuarioPorId(8);
+$usuario->delete();
 echo $usuario;
 
 ?>
